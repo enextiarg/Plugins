@@ -20,6 +20,8 @@ jQuery.fn.dataTableExt.aTypes.unshift(
 		var bDecimal = false;
 		var iStart=0;
 
+		if(!sData) return; 
+		
 		/* Negative sign is valid - shift the number check start point */
 		if ( sData.charAt(0) === '-' ) {
 			iStart = 1;
